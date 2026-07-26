@@ -1,0 +1,17 @@
+person
+car
+truck
+bus
+motorcycle
+bicycle
+traffic_light
+stop_sign
+speed_limit
+speed_camera
+gas_station
+parking_sign
+pedestrian_crossing
+road_works
+traffic_cone
+barrier
+pothole

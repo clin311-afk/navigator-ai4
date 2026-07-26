@@ -1,0 +1,67 @@
+name: navigator_ai
+description: AI-powered navigation app with real-time speed camera detection
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Maps & Navigation
+  # mapbox_maps_flutter: ^2.1.0  # Removed - causing build failures
+  flutter_map: ^7.0.0
+  latlong2: ^0.9.0
+  
+  # Camera & Object Detection
+  camera: ^0.11.0
+  image: ^4.1.0
+  tflite_flutter: ^0.11.0
+  
+  # Voice & AI
+  speech_to_text: ^6.6.0
+  flutter_tts: ^3.8.5
+  http: ^1.2.0
+  http_parser: ^4.0.0
+  
+  # Location & Sensors
+  geolocator: ^13.0.0
+  flutter_compass: ^0.8.0
+  sensors_plus: ^5.0.0
+  
+  # State Management
+  flutter_riverpod: ^2.5.0
+  
+  # UI
+  cupertino_icons: ^1.0.6
+  flutter_animate: ^4.5.0
+  
+  # Utilities
+  permission_handler: ^11.3.0
+  path_provider: ^2.1.0
+  shared_preferences: ^2.2.0
+  wakelock_plus: ^1.2.0
+  logger: ^2.0.0
+  url_launcher: ^6.2.0
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/models/
+    - assets/images/
+    - assets/sounds/
+    - assets/models/labels.txt
+#    - assets/models/yolov8n.tflite  # Uncomment after running convert_model.py
+
+dependency_overrides:
+  geolocator_android: ^4.6.2
